@@ -1,0 +1,98 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+body{
+	background-color: #252525;
+	color: white;
+}
+
+#logo{
+	height: 85%;
+	width: 85%;
+	margin-bottom: 15%;
+}
+
+#titre{
+	color: white;
+	font-family: 'Megrim', cursive;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+
+#titre::before{
+	display: inline-block;
+    height: 10px;
+    content: " ";
+    text-shadow: none;
+    background-color: #313a3f;
+    width: 25%;
+    margin-right: 5%;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    border-radius: 5px;
+}
+
+#titre::after{
+	display: inline-block;
+    height: 10px;
+    content: " ";
+    text-shadow: none;
+    background-color: #313a3f;
+    width: 25%;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.champs{
+	width: 50%;
+	height: 46px;
+	font-size: 1em;
+	color: white;
+	background: transparent;
+	border: 1px solid #42b4bc;
+	border-radius: 6px;
+	display: block;
+	margin: auto;
+	margin-top: 5%;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+#submit_button{
+background-color: #252525;
+border : none;
+}
+
+.circle {
+  padding: 10px 10px;
+  width: 20px;
+  font-size: 20px;
+  text-align: center;
+  /*background: #fff;*/
+  border-radius: 20px;
+  border: solid 1px;
+}
+
+.fa-facebook, .fa-google-plus {
+  color: #8e3f72;
+  border-color: #8e3f72;
+}
+
+.fa-facebook:hover, .fa-google-plus:hover {
+  background-color: #8e3f72;
+  color: #252525;
+  border-color: #8e3f72;
+}
+
+.fa-play, .fa-fast-backward{
+	color: #42b4bc;
+  	border-color: #42b4bc;
+}
+
+.fa-play:hover, .fa-fast-backward:hover {
+	background-color: #42b4bc;
+	color: #252525;
+
+
+}
