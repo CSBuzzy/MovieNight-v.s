@@ -1,0 +1,135 @@
+body {
+  background-color: #252525;
+
+}
+
+#logo_profil{
+  height:50%;
+  width: 50%;
+  margin-bottom: 2%;
+  margin-left: 25%
+
+}
+
+h1{
+  color: white;
+  font-family: 'Megrim', cursive;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+
+}
+
+h1::before{
+  display: inline-block;
+    height: 10px;
+    content: " ";
+    text-shadow: none;
+    background-color: #313a3f;
+    width: 25%;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    border-radius: 5px;
+}
+
+h1::after{
+  display: inline-block;
+    height: 10px;
+    content: " ";
+    text-shadow: none;
+    background-color: #313a3f;
+    width: 25%;
+   ;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+label{
+  color:white;
+  font-size: 19px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 20px;
+}
+
+textarea{
+  border: 1px solid #42B4BC;
+  padding: 0.5em;
+  margin: 20px;
+  background-color: #252525;
+  transition:background 200ms linear;
+  color:white;
+  font-family:'Open Sans', sans-serif;
+  font-size: 50px ;
+}
+
+
+
+
+.form-group {
+  z-index: 10;
+  margin:auto;
+}
+
+
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #42B4BC!important;
+  z-index: 99999;
+  border-radius: 0;
+  color: #42B4BC;
+  margin: 25px; 
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  color:#42B4BC;
+  border-color: #252525;
+}
+
+
+
+input:hover + span {
+  opacity: 1;
+}
+
+input:focus + span {
+  font-size: 14px;
+  bottom: 55px;
+  left: 0px;
+  opacity: 1;
+}
+
+
+.rating {
+      width: 226px;
+      height:38px;
+      margin: 0 auto 1em;
+      font-size: 45px;
+      overflow:hidden;
+    }
+    .rating a {
+      float:right;
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: color .4s;
+      -moz-transition: color .4s;
+      -o-transition: color .4s;
+      transition: color .4s;
+    }
+    .rating a:hover,
+    .rating a:hover ~ a,
+    .rating a:focus,
+    .rating a:focus ~ a   {
+      color: #ce5ba6;
+      cursor: pointer;
+    }
+    .rating2 {
+      direction: rtl;
+    }
+    .rating2 a {
+      float: none
+    }
