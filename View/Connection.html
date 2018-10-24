@@ -11,17 +11,27 @@
 
 </head>
 <body>
-	<img src="../Public/Img/logo_movie_night.svg" id="logo">
+	<div id="divlogo">
+		<img src="../Public/Img/logo_movie_night.svg" id="logo">
+	</div>
 	<p id = "titre">Se connecter</p>
 	<form>
 		<input type="text" name="identifiant" placeholder="Adresse mail" id = "identifiant" class="champs">
 		<input type="password" name="password" placeholder="Mot de passe" id = "password" class="champs">
-		
-		<a href="Accueil.html"><i class="fa fa-fast-backward circle"></i></a>
-      	<i class="fa fa-facebook circle"></i>
-    	<i class="fa fa-google-plus circle"></i>
-
-    	<button type="submit" id="submit_button"><i class="fa fa-play circle"></i></button>
+		<div id="buttons">
+			<div class="element1">
+				<a href="Accueil.html"><i class="fa fa-fast-backward circle"></i></a>
+			</div>
+			<div class="element2">
+				<i class="fa fa-facebook circle"></i>
+				<i class="fa fa-google-plus circle"></i>
+			</div>
+	    	<div class="element1">
+				<button type="submit" id="submit_button">
+					<i class="fa fa-play circle"></i>
+				</button>
+			</div>
+		</div>
 	</form>
 
 </body>
