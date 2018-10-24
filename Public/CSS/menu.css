@@ -1,0 +1,71 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+html {
+  height: 100%;
+}
+
+body{
+  background-color: #252525;
+  color: white;
+}
+
+.fa-film, .fa-search, .fa-user, .fa-ellipsis-h, .fa-rocket{
+  color: #42b4bc;
+  width: 35px;
+  height: 35px;
+  font-size: 35px;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+#menu{
+  /*background-color: hsla(321, 39%, 19%, 60%);*/
+  background-color: #313a3f;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 80px;
+}
+
+#menu a {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 20%;
+  margin : 0;
+}
+
+#menu a:hover {
+    background: hsl(321, 39%, 19%);
+    color: black;
+}
+
+#menuDeroulant{
+  display:none;
+  position: fixed;
+  bottom: 80px;
+  right: 0;
+  background-color: #313a3f;
+}
+
+#menuDeroulant a{
+  display: block;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #42b4bc;
+  font-size: 24px;
+  margin : 5px;
+}
+
+#menuDeroulant a:hover{
+  background-color: hsl(321, 39%, 19%);
+}
+
+#contenu{
+  width: 100%;
+  height: 100%;
+}
