@@ -61,8 +61,8 @@ label{
   text-align: center;
 }
 
-.textInput, #commentaires{
-  background-color: transparent;
+.textInput, #commentaires, #soiree{
+  background-color: #252525;
   z-index: 99999;
   margin: 25px;
   width: 300px;
@@ -76,13 +76,17 @@ label{
   border-bottom: 2px solid #42B4BC;
 }
 
-#commentaires{
+#commentaires, #soiree{
   border: 2px solid #42B4BC;
   border-radius: 5px;
 }
 
-#commentaires:focus, .textInput:focus{
+#commentaires:focus, .textInput:focus, #soiree:focus{
   outline: none;
+}
+
+#soiree option:hover{
+  background: hsl(321, 39%, 19%);
 }
 
 #submit_button{
