@@ -21,7 +21,7 @@
 					<option>---</option>
 					<option>---</option>
 				</select><br>
-				<label for="objet">Objet du signalement :</label><br>
+				<label for="objet">Personne concernée (facultatif) :</label><br>
 				<input type="text" name="objet" class="textInput"><br>
 				<label for="commentaires">Commentaires :</label><br>
 				<textarea rows="10" name="commentaires" id="commentaires"></textarea><br>

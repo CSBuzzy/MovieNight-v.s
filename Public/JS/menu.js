@@ -15,3 +15,8 @@ if (event.target.closest("#menuDeroulant") || event.target.closest("#menu")) ret
 
 document.getElementById('menuDeroulant').style.display = "none";
 });
+
+var lien = document.getElementById('lien');
+lien.onmouseover = function(){
+	lien.closest('#icon').style.color = "white";
+}
