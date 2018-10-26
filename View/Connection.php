@@ -13,7 +13,7 @@
 		<img src="../Public/Img/logo_movie_night.svg" id="logo">
 	</div>
 	<p id = "titre">Se connecter</p>
-	<form>
+	<form method="POST" action="Connection.php">
 		<input type="text" name="identifiant" placeholder="Adresse mail" id = "identifiant" class="champs">
 		<input type="password" name="password" placeholder="Mot de passe" id = "password" class="champs">
 		<div id="buttons">
@@ -31,7 +31,21 @@
 			</div>
 		</div>
 	</form>
-
 </body>
 <script type="text/javascript"></script>
+<?php 
+	$dbConn = new pdo("mysql: host=localhost; port=3306; dbname=movie_night; charset=utf8", "root", "password");
+	$SQLQuery = "select name_member, first_name_member 
+				from member 
+				inner join have on member.id_member = have.id_member
+				inner join contact_method on have.id_contact_method = contact_method.id_contact_method
+				where id_contact_type = 1 
+				and password_member = '".$_POST['password']."'
+				and value_contact_method = '".$_POST['identifiant']."'";
+	$SQLResult = $dbConn->query($SQLQuery);
+	while($SQLRow = $SQLResult->FetchObject()){
+		print_r($SQLRow);
+	}
+	$SQLResult->closeCursor();	
+?>
 </html>
