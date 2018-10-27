@@ -1,6 +1,5 @@
-body {
-  background-color: #252525;
-
+body{
+	background-color: #252525 !important;
 }
 
 #logo_profil{
@@ -8,7 +7,11 @@ body {
   width: 50%;
   margin-bottom: 2%;
   margin-left: 25%
+}
 
+#plus{
+ height:10%;
+ width: 10%;
 }
 
 h1{
@@ -17,7 +20,6 @@ h1{
   font-size: 24px;
   text-align: center;
   width: 100%;
-
 }
 
 h1::before{
@@ -34,22 +36,22 @@ h1::before{
 
 h1::after{
   display: inline-block;
-    height: 10px;
-    content: " ";
-    text-shadow: none;
-    background-color: #313a3f;
-    width: 25%;
-   ;
-    margin-bottom: 5px;
-    border-radius: 5px;
+  height: 10px;
+  content: " ";
+  text-shadow: none;
+  background-color: #313a3f;
+  width: 25%;
+  margin-bottom: 5px;
+  border-radius: 5px;
 }
+
 
 label{
   color:white;
-  font-size: 19px;
+  font-size: 22px;
   font-family: 'Open Sans', sans-serif;
   margin: 20px;
-}
+ }
 
 textarea{
   border: 1px solid #42B4BC;
@@ -59,77 +61,113 @@ textarea{
   transition:background 200ms linear;
   color:white;
   font-family:'Open Sans', sans-serif;
-  font-size: 50px ;
+  font-size: 22px;
+  width :80%;
 }
-
-
-
-
-.form-group {
-  z-index: 10;
-  margin:auto;
-}
-
 
 
 .form-control {
+  justify-content: center;
   background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #42B4BC!important;
-  z-index: 99999;
-  border-radius: 0;
+  border-bottom: 1px solid #42B4BC;
+  border-color: transparent  transparent #42B4BC transparent;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 2px 0 0 2px;
   color: #42B4BC;
-  margin: 25px; 
+  margin: 16px; 
+  font-family:'Open Sans', sans-serif;
+  font-size: 22px;
+  width :80%;
+  display: block;
 }
 
-.form-control:focus {
-  outline: none;
-  box-shadow: none;
-  background-color: transparent;
-  color:#42B4BC;
-  border-color: #252525;
+/* civilite */
+.select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    width: 160px;
+}
+.select select {
+    display: inline-block;
+    width: 260px;
+    cursor: pointer;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid ##42B4BC;
+    border-radius: 5px 5px 0 0;
+    background: #252525;
+    color: #42B4BC;
+    appearance: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    margin: 16px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: transparent  transparent #42B4BC transparent;
 }
 
 
-
-input:hover + span {
-  opacity: 1;
-}
-
-input:focus + span {
-  font-size: 14px;
-  bottom: 55px;
-  left: 0px;
-  opacity: 1;
-}
-
-
+/* etoile */
 .rating {
-      width: 226px;
-      height:38px;
+      width: 426px;
       margin: 0 auto 1em;
-      font-size: 45px;
+      font-size: 55px;
       overflow:hidden;
-    }
-    .rating a {
+}
+.rating a {
       float:right;
       color: #fff;
       text-decoration: none;
-      -webkit-transition: color .4s;
-      -moz-transition: color .4s;
-      -o-transition: color .4s;
-      transition: color .4s;
-    }
-    .rating a:hover,
-    .rating a:hover ~ a,
-    .rating a:focus,
-    .rating a:focus ~ a   {
+      margin-right: 40px;
+}
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a   {
       color: #ce5ba6;
       cursor: pointer;
-    }
-    .rating2 {
+}
+.rating2 {
       direction: rtl;
-    }
-    .rating2 a {
-      float: none
-    }
+}
+.rating2 a {
+      float: none;
+}
+
+/* pref */
+ul li {
+  font-family:arial;
+  font-size:12px;
+  display:inline-block;
+  text-align:center;
+  width:100px;
+}
+span {
+  display:block;
+}
+i{
+  vertical-align:middle;
+  padding:4px;
+  margin:4px;
+  line-height:24px;
+  border:1px dotted gray;
+}
+
+i:hover {
+  background:cyan;
+  Border:1px solid gray;
+}
+span i {
+  display:block;
+}
+
+
+
+
+
+
+
+   
