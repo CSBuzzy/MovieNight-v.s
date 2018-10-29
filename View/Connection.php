@@ -33,7 +33,7 @@
 	</form>
 </body>
 <script type="text/javascript"></script>
-<?php 
+<?php /*
 	$dbConn = new pdo("mysql: host=localhost; port=3306; dbname=movie_night; charset=utf8", "root", "password");
 	$SQLQuery = "select name_member, first_name_member 
 				from member 
@@ -46,6 +46,6 @@
 	while($SQLRow = $SQLResult->FetchObject()){
 		print_r($SQLRow);
 	}
-	$SQLResult->closeCursor();	
+	$SQLResult->closeCursor();	*/
 ?>
 </html>

@@ -78,7 +78,7 @@ label{
 
 #commentaires, #soiree{
   border: 1px solid #42B4BC;
-  border-radius: 5px;
+  border-radius:20px;
 }
 
 #commentaires:focus, .textInput:focus, #soiree:focus{
@@ -95,7 +95,7 @@ border : none;
 color: #42b4bc;
 }
 
-.fa-play:hover{
+.fa-play:hover, .fa-fast-backward:hover{
   background-color: #42b4bc;
   color: #252525;
 }
@@ -111,5 +111,25 @@ color: #42b4bc;
 
 #divSubmit{
   display: flex; 
-  justify-content: flex-end;
+  justify-content: center;
+}
+
+.fa-play{
+  margin-left: 120px;
+}
+
+.fa-fast-backward{
+  margin-right: 120px;
+}
+
+@media screen and (min-width: 800px){
+  #contenu{
+    margin-top: 80px;
+    width: 800px;
+    height: 100%;
+  }
+
+  .textInput, #commentaires, #soirees{
+    width: 410px;
+  }
 }

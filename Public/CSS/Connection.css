@@ -101,7 +101,15 @@ border : none;
 
 #buttons{
 	display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.fa-play{
+	margin-left: 55px;	
+}
+
+.fa-fast-backward{
+	margin-right: 60px;
 }
 
 .element1{
@@ -110,4 +118,10 @@ border : none;
 
 .element2{
 	margin-top: 20px;
+}
+
+@media screen and (min-width: 800px){
+	.champs{
+		width: 410px;
+	}
 }
