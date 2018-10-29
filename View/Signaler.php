@@ -28,6 +28,9 @@
 			</div>
 			<div id="divSubmit">
 				<button type="submit" id="submit_button">
+					<i class="fa fa-fast-backward circle"></i>
+				</button>
+				<button type="submit" id="submit_button">
 					<i class="fa fa-play circle"></i>
 				</button>
 			</div>

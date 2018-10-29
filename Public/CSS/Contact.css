@@ -85,8 +85,8 @@ label{
   outline: none;
 }
 
-#soiree option:hover{
-  background: hsl(321, 39%, 19%);
+#soiree {
+  padding: 10px;
 }
 
 #submit_button{
@@ -129,7 +129,7 @@ color: #42b4bc;
     height: 100%;
   }
 
-  .textInput, #commentaires, #soirees{
+  .textInput, #commentaires, #soiree{
     width: 410px;
   }
 }
