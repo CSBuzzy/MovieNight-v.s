@@ -23,6 +23,8 @@
 			 	<a href="Signaler.php">Signaler</a>
 			 	<a href="">Geolocalisation</a>
 			 	<a href="">Charte</a>
+			 	<a href="">À propos</a>
+			 	<a href="">FAQ</a>
 			 	<a href="Accueil.html">Deconnexion</a>
 			</div>
 		</div>
