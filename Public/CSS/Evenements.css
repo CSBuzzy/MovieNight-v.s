@@ -55,3 +55,53 @@ body{
 .special{
   background-color: #4f233f;
 }
+
+#image{
+  width: 125px;
+  height: 125px;
+  border-radius: 10px;
+  margin: 10px;
+  display: inline-block;
+  float: left;
+}
+
+#titreEvenement{
+  font-family: 'Megrim', cursive;
+  font-size: 16px;
+  margin: 10px 0px;
+}
+
+#texteEvenement{
+  height: 150px;
+  width: 200px;
+  display: inline-block;
+  font-size: 0.9em;
+  font-family:'Open Sans', sans-serif;
+  position: relative;
+}
+
+.circle {
+  text-align: center;
+  border-radius: 50px;
+  font-size: 0.9em;
+  padding: 8px;
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  background-color: #42b4bc;
+}
+
+.special .circle{
+  background-color: #ce5ba6;
+}
+
+#id_event {
+  display : none;
+}
+
+@media screen and (min-width: 800px){
+  #contenu{
+    margin-top: 80px;
+    width: 800px;
+    height: 100%;
+  }

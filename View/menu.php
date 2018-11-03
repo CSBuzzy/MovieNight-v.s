@@ -19,13 +19,13 @@
 			<div id="menuDeroulant">
 			 	<a href="">Créer évènement</a>
 			 	<a href="">Proposer évènement</a>
-			 	<a href="Contact.php">Contact</a>
-			 	<a href="Signaler.php">Signaler</a>
+			 	<a href="../View/Contact.php">Contact</a>
+			 	<a href="../View/Signaler.php">Signaler</a>
 			 	<a href="">Geolocalisation</a>
 			 	<a href="">Charte</a>
 			 	<a href="">À propos</a>
 			 	<a href="">FAQ</a>
-			 	<a href="Accueil.html">Deconnexion</a>
+			 	<a href="../View/Accueil.html">Deconnexion</a>
 			</div>
 		</div>
 	</div>
