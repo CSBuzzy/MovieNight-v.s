@@ -13,7 +13,7 @@
 		<img src="../Public/Img/logo_movie_night.svg" id="logo">
 	</div>
 	<p id = "titre">Se connecter</p>
-	<form method="POST" action="..\Controller\ConnectionController.php">
+	<form method="POST" action="..\Controller\Connection.php">
 		<input type="text" name="identifiant" placeholder="Adresse mail" id = "identifiant" class="champs">
 		<input type="password" name="password" placeholder="Mot de passe" id = "password" class="champs">
 		<div id="buttons">

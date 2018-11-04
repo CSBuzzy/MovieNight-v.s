@@ -1,0 +1,158 @@
+body{
+  background-color: #252525;
+  color: white;
+}
+
+#contenu{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 80px;
+}
+
+#titre{
+  color: white;
+  font-family: 'Megrim', cursive;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+#titre::before{
+  display: inline-block;
+  height: 10px;
+  content: " ";
+  text-shadow: none;
+  background-color: #313a3f;
+  width: 25%;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  border-radius: 5px;
+}
+
+#titre::after{
+  display: inline-block;
+  height: 10px;
+  content: " ";
+  text-shadow: none;
+  background-color: #313a3f;
+  width: 25%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#titreEvenement{
+  font-family: 'Megrim', cursive;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+#titreEvenement::before{
+  display: inline-block;
+  height: 5px;
+  content: " ";
+  text-shadow: none;
+  background-color: #8e3f72;
+  width: 10%;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  border-radius: 5px;
+}
+
+#titreEvenement::after{
+  display: inline-block;
+  height: 5px;
+  content: " ";
+  text-shadow: none;
+  background-color: #8e3f72;
+  width: 10%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#image{
+  height: 120px;
+  width: 120px;
+  border-radius: 70px;
+  display: block;
+  margin: auto;
+}
+
+#detailsEvenement{
+  border : 3px solid #4f233f;
+  border-radius: 10px;
+  width: 400px;
+  height: 700px;
+  margin: auto;
+  padding: 15px;
+  font-family:'Open Sans', sans-serif;
+  line-height: 200%;
+  font-size: 0.9em;
+  position: relative;
+}
+
+#langue{
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#langueChoisie{
+  color: #287e7f;
+}
+
+.sousTitres{
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#texteDescription{
+  display: block;
+  width: 75%;
+  float: right;
+  max-height: 110px;
+  overflow: auto;
+}
+
+#organisateur::before{
+  content: "";
+  display : block;
+  clear: both;
+}
+
+.circle {
+  text-align: center;
+  border-radius: 50px;
+  font-size: 24px;
+  padding: 8px;
+  background-color: #252525;
+  color: #42b4bc;
+  border: 1px solid #42b4bc;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.fa-play:hover, .fa-fast-backward:hover {
+  background-color: #42b4bc;
+  color: #252525;
+}
+
+#ticket{
+  width: 48px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+@media screen and (min-width: 800px){
+  #contenu{
+    margin-top: 80px;
+    width: 800px;
+    height: 100%;
+  }

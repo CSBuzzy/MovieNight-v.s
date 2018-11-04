@@ -50,10 +50,12 @@ body{
   background-color: #153b3c;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid #42b4bc;
 }
 
 .special{
   background-color: #4f233f;
+  border: 1px solid #ce5ba6;
 }
 
 #image{
@@ -91,12 +93,28 @@ body{
   background-color: #42b4bc;
 }
 
+.circle:hover{
+  background-color: white;
+  border: 1px solid #42b4bc;
+  color: #42b4bc;
+}
+
 .special .circle{
   background-color: #ce5ba6;
 }
 
-#id_event {
+.special .circle:hover{
+  background-color: white;
+  border: 1px solid #ce5ba6;
+  color: #ce5ba6;
+}
+
+.id_event {
   display : none;
+}
+
+.lienEvenement:link, .lienEvenement:visited{
+  color: white;
 }
 
 @media screen and (min-width: 800px){
