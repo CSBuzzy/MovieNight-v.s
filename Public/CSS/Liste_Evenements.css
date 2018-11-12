@@ -70,7 +70,7 @@ body{
 #titreEvenement{
   font-family: 'Megrim', cursive;
   font-size: 16px;
-  margin: 10px 0px;
+  margin: 5px 0px;
 }
 
 #texteEvenement{
@@ -116,6 +116,7 @@ body{
 .lienEvenement:link, .lienEvenement:visited{
   color: white;
 }
+
 
 @media screen and (min-width: 800px){
   #contenu{

@@ -18,7 +18,7 @@
 		<input type="password" name="password" placeholder="Mot de passe" id = "password" class="champs">
 		<div id="buttons">
 			<div class="element1">
-				<a href="Accueil.html"><i class="fa fa-fast-backward circle"></i></a>
+				<a href="../View/Accueil.html"><i class="fa fa-fast-backward circle"></i></a>
 			</div>
 			<div class="element2">
 				<i class="fa fa-facebook circle"></i>

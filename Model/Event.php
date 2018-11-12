@@ -15,6 +15,39 @@ class Event{
 	private $id_event_idea;
 	private $id_status;
 	private $id_address;
+	private $organizer;
+	private $city;
+	private $seatsRemaining_event;
+
+	public function __construct($id_event, 
+								$name_event, 
+								$description_event, 
+								$date_event, 
+								$duration_event,
+								$member_number_event, 
+								$special_event, 
+								$image_event, 
+								$chat_event, 
+								$id_member, 
+								$id_event_idea, 
+								$id_status, 
+								$id_address, 
+								$organizer, 
+								$city){
+		$this->id_event = $id_event;
+		$this->name_event = $name_event;
+		$this->description_event = $description_event;
+		$this->date_event = $date_event;
+		$this->duration_event = $duration_event;
+		$this->member_number_event = $member_number_event;
+		$this->special_event = $special_event;
+		$this->image_event = $image_event;
+		$this->chat_event = $chat_event;
+		$this->id_status = $id_status;
+		$this->id_address = $id_address;
+		$this->organizer = $organizer;
+		$this->city = $city;
+	}
 
 	public function getId_event(){
 		return $this->id_event;
@@ -66,6 +99,22 @@ class Event{
 
 	public function getId_address(){
 		return $this->id_address;
+	}
+
+	public function getOrganizer(){
+		return $this->organizer;
+	}
+
+	public function getCity(){
+		return $this->city;
+	}
+
+	public function getSeatsRemaining_event(){
+		return $this->seatsRemaining_event;
+	}
+
+	public function setSeatsRemaining_event($number){
+		$this->seatsRemaining_event = $number;
 	}
 }
 

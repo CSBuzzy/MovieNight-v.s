@@ -12,7 +12,7 @@
 	//S'il n'y a pas d'ID
 	else {
 		//on va récupérer la liste des evenements
-		/*APPELER LA FONCTION QUI RECUPERE TOUS LES EVENEMENTS AVEC LE BON STATUT*/
+		$eventList = getAllEvents();
 		//puis on affiche la vue de la liste d'evenements
 		require_once("../View/Vue_Liste_Evenements.php");
 	}
