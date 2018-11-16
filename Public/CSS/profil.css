@@ -1,18 +1,35 @@
 body{
-	background-color: #252525 !important;
+	background-color: #252525;
+}
+
+#logo{
+	text-align: center;
 }
 
 #logo_profil{
-  height:50%;
-  width: 50%;
-  margin-bottom: 2%;
-  margin-left: 25%
+  height:353px;
+  width: 353px;
 }
 
 #plus{
- height:10%;
- width: 10%;
+ height:30%;
+ width: 30%;
 }
+
+#form2{
+	display: none;
+}
+
+
+.formulaire{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.check{
+ 	color: #ce5ba6;
+ }
 
 h1{
   color: white;
@@ -23,7 +40,7 @@ h1{
 }
 
 h1::before{
-  display: inline-block;
+  	display: inline-block;
     height: 10px;
     content: " ";
     text-shadow: none;
@@ -47,127 +64,117 @@ h1::after{
 
 
 label{
-  color:white;
-  font-size: 22px;
-  font-family: 'Open Sans', sans-serif;
-  margin: 20px;
+	display:block;
+	width: 150px;
+	float: left;
+	color:white;
+	font-size: 22px;
+	font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+	margin-top: 8px; 
+ 	margin-bottom: 8px;
  }
 
 textarea{
-  border: 1px solid #42B4BC;
+  resize:none;
+  border: 1px none #42B4BC;
   padding: 0.5em;
-  margin: 20px;
+  margin-top: 8px;
   background-color: #252525;
   transition:background 200ms linear;
-  color:white;
+  color:#42B4BC;
   font-family:'Open Sans', sans-serif;
   font-size: 22px;
-  width :80%;
+  width :100%;
+  outline: none;
 }
 
+#file{
+	display: none;
+}
 
-.form-control {
-  justify-content: center;
+.champs{
   background-color: transparent;
-  border-bottom: 1px solid #42B4BC;
-  border-color: transparent  transparent #42B4BC transparent;
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-radius: 2px 0 0 2px;
+  border-style: none;
   color: #42B4BC;
-  margin: 16px; 
+  margin-top: 8px; 
+  margin-bottom: 8px;
   font-family:'Open Sans', sans-serif;
   font-size: 22px;
-  width :80%;
-  display: block;
-}
-
-/* civilite */
-.select {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 0;
-    width: 160px;
-}
-.select select {
-    display: inline-block;
-    width: 260px;
-    cursor: pointer;
-    padding: 10px;
-    outline: 0;
-    border: 0;
-    border-bottom: 1px solid ##42B4BC;
-    border-radius: 5px 5px 0 0;
-    background: #252525;
-    color: #42B4BC;
-    appearance: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
-    margin: 16px;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: transparent  transparent #42B4BC transparent;
+  outline: none;
 }
 
 
-/* etoile */
-.rating {
-      width: 426px;
-      margin: 0 auto 1em;
-      font-size: 55px;
-      overflow:hidden;
+.etoiles {
+      width: auto;
+      margin: auto;
+      font-size: 40px;
+      direction: rtl;
+      text-align: center;
 }
-.rating a {
-      float:right;
+.etoiles a {
+      
       color: #fff;
       text-decoration: none;
-      margin-right: 40px;
 }
-.rating a:hover,
-.rating a:hover ~ a,
-.rating a:focus,
-.rating a:focus ~ a   {
+.etoiles a:hover,
+.etoiles a:hover ~ a,
+.etoiles a:focus,
+.etoiles a:focus ~ a   {
       color: #ce5ba6;
       cursor: pointer;
 }
-.rating2 {
-      direction: rtl;
-}
-.rating2 a {
-      float: none;
-}
 
-/* pref */
-ul li {
-  font-family:arial;
-  font-size:12px;
-  display:inline-block;
-  text-align:center;
-  width:100px;
-}
-span {
-  display:block;
-}
-i{
-  vertical-align:middle;
-  padding:4px;
-  margin:4px;
-  line-height:24px;
-  border:1px dotted gray;
+.historique{
+	margin: 20px 0px;
+	text-align: center;
+	outline: none;
 }
 
-i:hover {
-  background:cyan;
-  Border:1px solid gray;
+#bouton_historique{
+	cursor:pointer; 
+	padding:5px 20px; 
+	background-color:#252525; 
+	color:#42B4BC; 
+	border: solid 1px #42B4BC; 
+	border-radius:4px; 
+	font-size: 22px;
 }
-span i {
-  display:block;
+.icone{
+	margin: 0px 20px;
+	padding: 5px;
+	font-size: 22px;
+	color:#153b3c;
+
 }
 
+td {
+	text-align: center;
+}
 
+th{
+	text-align: right;
+	font-weight: normal;
+}
 
+.selected{
+	color : #ce5ba6;
+}
 
+#suivant, #precedent{
+	color :#153b3c;
+	font-size: 80px;
+	position: absolute;
+}
 
+#suivant{
+	right: 0;
+}
+#precedent{
+	left: 0;
+}
 
+#suivant:hover, #precedent:hover{
+	color :#ce5ba6;
+}
 
-   
