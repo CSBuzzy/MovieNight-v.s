@@ -102,7 +102,7 @@ body{
   margin-bottom: 10px;
 }
 
-#langueChoisie{
+.langueChoisie{
   color: #287e7f;
 }
 
@@ -148,6 +148,14 @@ body{
   position: absolute;
   bottom: 15px;
   right: 15px;
+}
+
+#date{
+  text-transform: capitalize;
+}
+
+.special{
+  border-color: #42b4bc;
 }
 
 @media screen and (min-width: 800px){
