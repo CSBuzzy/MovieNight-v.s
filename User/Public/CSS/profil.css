@@ -1,0 +1,180 @@
+body{
+	background-color: #252525;
+}
+
+#logo{
+	text-align: center;
+}
+
+#logo_profil{
+  height:353px;
+  width: 353px;
+}
+
+#plus{
+ height:30%;
+ width: 30%;
+}
+
+#form2{
+	display: none;
+}
+
+
+.formulaire{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.check{
+ 	color: #ce5ba6;
+ }
+
+h1{
+  color: white;
+  font-family: 'Megrim', cursive;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+h1::before{
+  	display: inline-block;
+    height: 10px;
+    content: " ";
+    text-shadow: none;
+    background-color: #313a3f;
+    width: 25%;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    border-radius: 5px;
+}
+
+h1::after{
+  display: inline-block;
+  height: 10px;
+  content: " ";
+  text-shadow: none;
+  background-color: #313a3f;
+  width: 25%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+
+label{
+	display:block;
+	width: 150px;
+	float: left;
+	color:white;
+	font-size: 22px;
+	font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+	margin-top: 8px; 
+ 	margin-bottom: 8px;
+ }
+
+textarea{
+  resize:none;
+  border: 1px none #42B4BC;
+  padding: 0.5em;
+  margin-top: 8px;
+  background-color: #252525;
+  transition:background 200ms linear;
+  color:#42B4BC;
+  font-family:'Open Sans', sans-serif;
+  font-size: 22px;
+  width :100%;
+  outline: none;
+}
+
+#file{
+	display: none;
+}
+
+.champs{
+  background-color: transparent;
+  border-style: none;
+  color: #42B4BC;
+  margin-top: 8px; 
+  margin-bottom: 8px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 22px;
+  outline: none;
+}
+
+
+.etoiles {
+      width: auto;
+      margin: auto;
+      font-size: 40px;
+      direction: rtl;
+      text-align: center;
+}
+.etoiles a {
+      
+      color: #fff;
+      text-decoration: none;
+}
+.etoiles a:hover,
+.etoiles a:hover ~ a,
+.etoiles a:focus,
+.etoiles a:focus ~ a   {
+      color: #ce5ba6;
+      cursor: pointer;
+}
+
+.historique{
+	margin: 20px 0px;
+	text-align: center;
+	outline: none;
+}
+
+#bouton_historique{
+	cursor:pointer; 
+	padding:5px 20px; 
+	background-color:#252525; 
+	color:#42B4BC; 
+	border: solid 1px #42B4BC; 
+	border-radius:4px; 
+	font-size: 22px;
+}
+.icone{
+	margin: 0px 20px;
+	padding: 5px;
+	font-size: 22px;
+	color:#153b3c;
+
+}
+
+td {
+	text-align: center;
+}
+
+th{
+	text-align: right;
+	font-weight: normal;
+}
+
+.selected{
+	color : #ce5ba6;
+}
+
+#suivant, #precedent{
+	color :#153b3c;
+	font-size: 80px;
+	position: absolute;
+}
+
+#suivant{
+	right: 0;
+}
+#precedent{
+	left: 0;
+}
+
+#suivant:hover, #precedent:hover{
+	color :#ce5ba6;
+}
+

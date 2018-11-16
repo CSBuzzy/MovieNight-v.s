@@ -1,0 +1,43 @@
+body{
+	background-color: #252525;
+	color: white;
+}
+
+#divlogo{
+	text-align: center;
+	margin-top: 20px;
+}
+
+#logo{
+	height: 353px;
+	width: 353px;
+	margin-bottom: 60px;
+}
+
+.button{
+	width: 210px;
+	height:46px;
+	color: white;
+	background: transparent;
+	border: 1px solid #42b4bc;
+	border-radius: 6px;
+	font-family: 'Megrim', cursive;
+	font-size: 24px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-top: 21px;
+}
+
+#buttons{
+	text-align: center;
+}
+
+.button:hover {
+    background-color: #42b4bc;
+}
+
+#home_text{
+	margin-top: 62px;
+	font-style: italic;
+	font-family: 'Open Sans', sans-serif;
+}
