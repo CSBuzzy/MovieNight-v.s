@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div id="divlogo">
-		<img src="../Public/Img/logo_movie_night.svg" id="logo">
+		<img src="/MovieNight-v.s/User/Public/Img/logo_movie_night.svg" id="logo">
 	</div>
 	<p id = "titre">Se connecter</p>
 	<form method="POST" action="..\Controller\Connection.php">
