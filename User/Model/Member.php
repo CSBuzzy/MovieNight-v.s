@@ -11,19 +11,33 @@ class Member{
 	private $description_member;
 	private $email_member;
 	private $phone_member;
-	private $address_member;
+	private $line1_address_member;
+	private $line2_address_member;
+	private $name_city_member;
+	private $post_code_city_member;
+	private $name_preference_member;
+	private $icon_preference_member;
+	
 
 	public function __construct($id_member, 
+								$photo_member,
 								$name_member, 
 								$first_name_member, 
 								$birth_date_member,
-								$password_member,
-								$photo_member,
-								$description_member,
-								$email_member,
+								$line1_address_member,
+								$line2_address_member,
+								$post_code_city_member,
+								$name_city_member,
 								$phone_member,
-								$address_member) {
+								$email_member,
+								$password_member,
+								$description_member,
+								$name_preference_member,
+								$icon_preference_member						
+								) {
+		
 
+										
 		$this->id_member = $id_member;
 		$this->name_member = $name_member;
 		$this->first_name_member = $first_name_member;
@@ -33,7 +47,12 @@ class Member{
 		$this->description_member = $description_member;
 		$this->email_member = $email_member;
 		$this->phone_member = $phone_member;
-		$this->address_member = $address_member;
+		$this->line1_address_member = $line1_address_member;
+		$this->line2_address_member = $line2_address_member;
+		$this->name_city_member = $name_city_member;
+		$this->post_code_city_member = $post_code_city_member;
+		$this->name_preference_member = $name_preference_member;
+		$this->icon_preference_member = $icon_preference_member;
 	}
 
 	public function getId_member(){
@@ -61,7 +80,7 @@ class Member{
 	}
 
 	public function getDescription_member(){
-		return $this->description_memberr;
+		return $this->description_member;
 	}
 
 	public function getEmail_member(){
@@ -72,10 +91,29 @@ class Member{
 		return $this->phone_member;
 	}
 
-	public function getAddress_member(){
-		return $this->address_member;
+	public function getLine1_address_member(){
+		return $this->line1_address_member;
 	}
 
+	public function getLine2_address_member(){
+		return $this->line2_address_member;
+	}
+
+	public function getName_city_member(){
+		return $this->name_city_member;
+	}
+
+	public function getPost_code_city_member(){
+		return $this->post_code_city_member;
+	}
+
+	public function getName_preference_member(){
+		return $this->name_preference_member;
+	}
+
+	public function getIcon_preference_member(){
+		return $this->icon_preference_member;
+	}
 }
 
 ?>
