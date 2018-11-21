@@ -319,3 +319,8 @@ th{
   text-align: right;
   font-weight: normal;
 }
+
+@media screen and (min-width: 800px){
+  #contenu{
+    margin-top: 80px;
+  }
