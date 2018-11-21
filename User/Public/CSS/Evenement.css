@@ -55,7 +55,7 @@ body{
   height: 5px;
   content: " ";
   text-shadow: none;
-  background-color: #8e3f72;
+  background-color: #42b4bc;
   width: 10%;
   margin-right: 10px;
   margin-bottom: 5px;
@@ -68,7 +68,7 @@ body{
   height: 5px;
   content: " ";
   text-shadow: none;
-  background-color: #8e3f72;
+  background-color: #42b4bc;
   width: 10%;
   margin-left: 10px;
   margin-bottom: 5px;
@@ -84,7 +84,7 @@ body{
 }
 
 #detailsEvenement{
-  border : 3px solid #4f233f;
+  border : 3px solid #153b3c;
   border-radius: 10px;
   width: 400px;
   margin: auto;
@@ -94,6 +94,14 @@ body{
   line-height: 200%;
   font-size: 0.9em;
   position: relative;
+}
+
+#detailsEvenement.special{
+  border : 3px solid #4f233f;
+}
+
+.special #titreEvenement::after, .special #titreEvenement::before{
+  background-color: #8e3f72;
 }
 
 #langue{

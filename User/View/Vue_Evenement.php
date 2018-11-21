@@ -12,8 +12,9 @@
 <body>
 	<div id="contenu">
 		<h1 id="titre">Evenement</h1>
-
-		<section id="detailsEvenement">
+		<section id="detailsEvenement" class = <?php if ($event->getSpecial_event() == 1) {
+				print("special");
+			} ?>>
 			<img id="image" src=<?php print($event->getImage_event()) ?>>
 			<h2 id="titreEvenement"><?php print($event->getName_event()) ?></h2>
 			<label id="langue">
