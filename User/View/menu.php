@@ -22,7 +22,7 @@
 			 	<a href="../View/Contact.php">Contact</a>
 			 	<a href="../View/Signaler.php">Signaler</a>
 			 	<a href="">Geolocalisation</a>
-			 	<a href="">Charte</a>
+			 	<a href="../View/charte.html">Charte</a>
 			 	<a href="">À propos</a>
 			 	<a href="">FAQ</a>
 			 	<a href="../View/Accueil.html">Deconnexion</a>

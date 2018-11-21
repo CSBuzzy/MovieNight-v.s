@@ -4,9 +4,6 @@ body{
   line-height: 1.4;
 }
 
-#contenu{
-  margin-bottom: 80px;
-}
 #logo{
 	text-align: center;
 }
@@ -319,8 +316,3 @@ th{
   text-align: right;
   font-weight: normal;
 }
-
-@media screen and (min-width: 800px){
-  #contenu{
-    margin-top: 80px;
-  }

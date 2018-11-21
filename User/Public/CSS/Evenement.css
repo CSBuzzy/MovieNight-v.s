@@ -3,12 +3,6 @@ body{
   color: white;
 }
 
-#contenu{
-  width: 100%;
-  height: 100%;
-  margin-bottom: 80px;
-}
-
 #titre{
   color: white;
   font-family: 'Megrim', cursive;
@@ -165,10 +159,3 @@ body{
 .special{
   border-color: #42b4bc;
 }
-
-@media screen and (min-width: 800px){
-  #contenu{
-    margin-top: 80px;
-    width: 800px;
-    height: 100%;
-  }
