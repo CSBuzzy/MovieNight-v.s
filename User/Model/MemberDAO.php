@@ -45,7 +45,6 @@ function connectionMember($email, $password){
 										 $SQLRow->name_preference,
 										 $SQLRow->icon_preference 
 										);
-		var_dump($_SESSION['member']);
 		echo ("<h4 id = 'notification'>Bienvenue ".$_SESSION["member"]->getFirst_name_member()."</h4>");
 		$SQLStatement->closeCursor();
 		return true;
