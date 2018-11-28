@@ -181,6 +181,7 @@ function inscriptionMember($last_name, $first_name, $birthdate, $password, $phot
     $SQLStatement->bindValue(':mail', $email);
     $SQLStatement->bindvalue(':phone_number', $phone_number);
     if ($SQLStatement->execute()) {
+    	//$SQLStatement->debugDumpParams();
     	$SQLStatement = $bdd->prepare("SELECT @message as message");
     	$SQLStatement->execute();
 		if ($SQLRow = $SQLStatement->FetchObject()) {
