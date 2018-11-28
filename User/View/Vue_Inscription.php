@@ -8,8 +8,9 @@
     <link rel="icon" type="image/png" href="../Public/Img/logo_movie_night_favicon.png"/>
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Megrim|Muli:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../Public/CSS/signIn.css">
+    <link rel="stylesheet" type="text/css" href="../Public/CSS/Inscription.css">
     <!-- MATERIALIZE  Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
@@ -22,51 +23,89 @@
     </div>
 </header>
 <div class="row">
-    <form class="col s12">
+    <form class="col s12" method="POST" action="../Controller/Inscription.php" enctype="multipart/form-data">
         <div class="row">
-            <div class="input-field col s12">
-                <input id="first_name" type="text" class="white-text validate">
+            <div class="col s1 ">
+            <i class="material-icons">grade</i>
+            </div>
+            <div class="input-field col s5">
+                <input name="first_name" id="first_name" type="text" class="white-text validate">
                 <label for="first_name" class="teal-text">Nom</label>
             </div>
-            <div class="input-field col s12">
-                <input id="last_name" type="text" class="white-text validate">
+            <div class=" col s1">
+            <i class="material-icons">grade</i>
+            </div>
+            <div class="input-field col s5">
+                <input name="last_name" id="last_name" type="text" class="white-text validate">
                 <label for="last_name" class="teal-text">Prenom</label>
             </div>
-            <div class="input-field col s12">
-                <input id="birthdate" type="text" class="datepicker white-text">
+            <div class="col s1 ">
+                <i class="material-icons">grade</i>
+            </div>
+            <div class="input-field col s11">
+                <input name="birthdate" id="birthdate" type="text" class="datepicker white-text">
                 <label for="birthdate" class="teal-text">Date de naissance</label>
             </div>
-            <div class="input-field col s12">
-                <input id="email" type="email" class="white-text validate">
+            <div class="input-field col s11 offset-s1">
+                <textarea name="description" id="textarea1" type="text" class=" materialize-textarea white-text validate"></textarea>
+                <label for="textarea1" class="teal-text">Description</label>
+            </div>
+            <div class="input-field col s11 offset-s1">
+                <input name="address" id="address" type="text" class="white-text validate">
+                <label for="address" class="teal-text">Adresse</label>
+            </div>
+            <div class="input-field col s11 offset-s1">
+                <input name="address2" id="address2" type="text" class="white-text validate">
+                <label for="address2" class="teal-text"></label>
+            </div>
+            <div class="input-field col s5 offset-s1">
+                <input name="city" id="city" type="text" class="white-text validate">
+                <label for="city" class="teal-text">Ville</label>
+            </div>
+            <div class="input-field col s5 offset-s1">
+                <input name="post_code" id="post_code" type="text" class="white-text validate">
+                <label for="post_code" class="teal-text">Code Postal</label>
+            </div>
+            <div class="input-field col s11 offset-s1">
+                <input name="phone_number" id="phone_number" type="text" class="white-text validate">
+                <label for="phone_number" class="teal-text">Numéro de mobile</label>
+            </div>
+            <div class="col s1">
+                <i class="material-icons">grade</i>
+            </div>
+            <div class="input-field col s11">
+                <input name="email" id="email" type="email" class="white-text validate">
                 <label for="email" class="teal-text">Mail</label>
                 <span class="helper-text" data-error="wrong" data-success="right"></span>
             </div>
-            <div class="input-field col s12">
-                <input id="mailconfirm" type="email" class="white-text validate">
-                <label for="mailconfirm" class="teal-text">Confirmation mail</label>
-                <span class="helper-text" data-error="wrong" data-success="right"></span>
+            <div class="col s1">
+                <i class="material-icons">grade</i>
             </div>
-            <div class="input-field col s12">
-                <input id="password" type="password" class="white-text validate">
+            <div class="input-field col s11">
+                <input name="password" id="password" type="password" class="white-text validate">
                 <label for="password" class="teal-text">Mot de passe</label>
                 <span class="helper-text" data-error="wrong" data-success="right"></span>
             </div>
-            <div class="input-field col s12">
-                <input id="passwordconfirm" type="password" class="white-text validate">
+            <div class="col s1 ">
+                <i class="material-icons">grade</i>
+            </div>
+            <div class="input-field col s11">
+                <input name="passwordconfirm" id="passwordconfirm" type="password" class="white-text validate">
                 <label for="passwordconfirm" class="teal-text">Confirmation du mot de passe</label>
                 <span class="helper-text" data-error="wrong" data-success="right"></span>
             </div>
         </div>
         <div class="row valign-wrapper">
-            <div class="col s5 m5">
+            <div class="col s4 m4 offset-s1">
                 <label class="teal-text avatar">Photo de profil</label>
             </div>
-            <div class="file-field input-field col s7 m7">
-                <input type="file">
+            <div class="file-field input-field col s6 m6 offset-s1">
+               <!-- <input type="hidden" name="MAX_FILE_SIZE" value="100000"> -->
+                <input type="file" name="photo">
                 <img src="../Public/Img/thin-add-button.svg" class="imgAvatar circle responsive-img">
             </div>
         </div>
-        <div class="row col s12">
+        <div class="row col s11 offset-s1">
             <p>
                 <label>
                     <input type="checkbox"/>
@@ -117,7 +156,7 @@
                 </a>
             </div>
             <div class="input-field col s6">
-               <input type="image" src="../Public/Img/play.svg" name="action" class="heighBtnPlay"/>
+               <input type="image" accept="image/*" src="../Public/Img/play.svg" name="action" class="heighBtnPlay"/>
             </div>
         </div>
     </form>
@@ -127,5 +166,4 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-
 </html>

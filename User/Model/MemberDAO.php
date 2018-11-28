@@ -1,6 +1,5 @@
 <?php
 
-
 function connectionMember($email, $password){
 	require_once('DbConn.php');
 	require_once('Member.php');
@@ -33,4 +32,38 @@ function connectionMember($email, $password){
 		return false;
 	}
 }
+
+function inscriptionMember($last_name, $first_name, $birthdate, $password, $photo, $password, $passwordconfirm,
+                           $description,$address,$address2,$post_code,$city,$email, $phone_number,$message){
+    require_once('../Model/DbConn.php');
+    require_once('../Model/Member.php');
+
+    if($password==$passwordconfirm){
+        $password=sha1($password);
+    }else{
+        print('Vérifiez le mot de passe!');
+    }
+   // global $bdd;
+    $SQLStatement = $bdd->prepare("CALL add_member(:name,:first_name,:birth_date,:pass,:photo,:description,
+                                   :address,:address2,:post_code,:city,:mail,:phone_number,:message)");
+    $SQLStatement->bindValue(':name', $last_name);
+    $SQLStatement->bindValue(':first_name', $first_name);
+    $SQLStatement->bindValue(':birth_date', $birthdate);
+    $SQLStatement->bindValue(':pass', $password);
+    $SQLStatement->bindValue(':photo', $photo);
+    $SQLStatement->bindvalue(':description', $description);
+    $SQLStatement->bindvalue(':address', $address);
+    $SQLStatement->bindvalue(':address2', $address2);
+    $SQLStatement->bindvalue(':code_post', $post_code);
+    $SQLStatement->bindvalue(':city', $city);
+    $SQLStatement->bindValue(':mail', $email);
+    $SQLStatement->bindvalue(':phone_number', $phone_number);
+    $SQLStatement->bindValue(':message', $message);
+
+    $SQLStatement->execute();
+    $SQLStatement->debugDumpParams();
+
+
+}
+
 ?>

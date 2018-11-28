@@ -40,8 +40,16 @@ body {
 }
 
 /***************************/
-/*   BUTTONS & LINK        */
+/*  BUTTONS, LINK & ICONS  */
 /***************************/
+
+.material-icons{
+    font-size:11px;
+    color:#8e3f72;
+    /*padding-top:50px;*/
+    padding-left:37px;
+    float:left;
+}
 
 img, .heighBtnPlay{
     height:66px;

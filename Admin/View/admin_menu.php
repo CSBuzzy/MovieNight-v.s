@@ -9,7 +9,7 @@
 <?php include "search_header_admin.php";?>
 <ul class="side-menu" >
 
-    <li><img class="iconmenu" src="..\Public\Img\users.svg"/><a href="#">Membres</a></li>
+    <li><img class="iconmenu" src="..\Public\Img\users.svg"/><a href="allUser.php">Membres</a></li>
 
     <li><img class="iconmenu" src="..\Public\Img\film.svg"/><a href="#">Evénements</a>
         <ul class="submenu" style = "position: relative;">

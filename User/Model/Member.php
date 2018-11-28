@@ -57,11 +57,11 @@ class Member{
 	}
 
 	public function getPhoto_member(){
-		return $this->photo_member;
+        return $this->photo_member;
 	}
 
 	public function getDescription_member(){
-		return $this->description_memberr;
+		return $this->description_member;
 	}
 
 	public function getEmail_member(){
