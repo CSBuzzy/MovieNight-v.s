@@ -43,6 +43,8 @@ class Event{
 		$this->special_event = $special_event;
 		$this->image_event = $image_event;
 		$this->chat_event = $chat_event;
+		$this->id_member = $id_member;
+		$this->id_event_idea = $id_event_idea;
 		$this->id_status = $id_status;
 		$this->id_address = $id_address;
 		$this->organizer = $organizer;
@@ -85,8 +87,8 @@ class Event{
 		return $this->chat_event;
 	}
 
-	public function getId_Member(){
-		return $this->id_event;
+	public function getId_member(){
+		return $this->id_member;
 	}
 
 	public function getId_event_idea(){
