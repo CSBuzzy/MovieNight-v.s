@@ -33,19 +33,17 @@ function connectionMember($email, $password){
 	}
 }
 
-function inscriptionMember($last_name, $first_name, $birthdate, $password, $photo, $password, $passwordconfirm,
-                           $description,$address,$address2,$post_code,$city,$email, $phone_number,$message){
+function inscriptionMember($last_name, $first_name, $birthdate, $password, $photo, $passwordconfirm, $description, $address, $address2,$post_code,$city,$email, $phone_number){
     require_once('../Model/DbConn.php');
-    require_once('../Model/Member.php');
 
     if($password==$passwordconfirm){
         $password=sha1($password);
     }else{
         print('Vérifiez le mot de passe!');
+        return false;
     }
-   // global $bdd;
     $SQLStatement = $bdd->prepare("CALL add_member(:name,:first_name,:birth_date,:pass,:photo,:description,
-                                   :address,:address2,:post_code,:city,:mail,:phone_number,:message)");
+                                   :address,:address2,:post_code,:city,:mail,:phone_number, @message)");
     $SQLStatement->bindValue(':name', $last_name);
     $SQLStatement->bindValue(':first_name', $first_name);
     $SQLStatement->bindValue(':birth_date', $birthdate);
@@ -54,14 +52,21 @@ function inscriptionMember($last_name, $first_name, $birthdate, $password, $phot
     $SQLStatement->bindvalue(':description', $description);
     $SQLStatement->bindvalue(':address', $address);
     $SQLStatement->bindvalue(':address2', $address2);
-    $SQLStatement->bindvalue(':code_post', $post_code);
+    $SQLStatement->bindvalue(':post_code', $post_code);
     $SQLStatement->bindvalue(':city', $city);
     $SQLStatement->bindValue(':mail', $email);
     $SQLStatement->bindvalue(':phone_number', $phone_number);
-    $SQLStatement->bindValue(':message', $message);
-
-    $SQLStatement->execute();
-    $SQLStatement->debugDumpParams();
+    if ($SQLStatement->execute()) {
+    	$SQLStatement = $bdd->prepare("SELECT @message as message");
+    	$SQLStatement->execute();
+		if ($SQLRow = $SQLStatement->FetchObject()) {
+			return $SQLRow->message;
+		}
+    }
+    else {
+    	$SQLStatement->debugDumpParams();
+    	return false;
+    }
 
 
 }

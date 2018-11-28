@@ -73,6 +73,10 @@ img, .heighBtnPlay{
     text-decoration: underline;
 }
 
+#notif{
+    color: white;
+}
+
 /***************************/
 /*    INPUTS MATERIALIZE   */
 /***************************/
