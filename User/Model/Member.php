@@ -77,7 +77,7 @@ class Member{
 	}
 
 	public function getPhoto_member(){
-		return $this->photo_member;
+        return $this->photo_member;
 	}
 
 	public function getDescription_member(){

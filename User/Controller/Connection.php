@@ -5,7 +5,7 @@
 	if (isset($_POST['identifiant']) && isset($_POST['password'])) {
 		//On teste la connexion avec ses identifiants
 		//Si elle réussit : 
-		if(connectionMember($_POST['identifiant'], $_POST['password'])){ 
+		if(connectionMember($_POST['identifiant'], sha1($_POST['password']))){ 
 			//on lui envoie la page evènements :
 			require_once ("../Controller/Evenements.php");
 		}

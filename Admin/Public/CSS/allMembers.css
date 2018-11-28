@@ -1,0 +1,118 @@
+body{
+    font-family:Muli, sans-serif;
+}
+
+/*.search_position{
+    display:flex;
+    width:100%;
+    justify-content:space-around;
+    align-items:center;
+    height:auto;
+}*/
+
+.cardsContainer{
+    margin-left:60px;
+    display:flex;
+    justify-content:space-around;
+    flex-flow:row wrap;
+    align-items:center;
+    z-index: -3;
+    margin-top:85px;
+}
+
+/*//////////////////*/
+/* CARD ALL MEMBER  */
+/*//////////////////*/
+
+.card{
+    height:auto;
+    margin-top:63px;
+    background-color: #1F2020;
+    border-radius: 5px;
+    color: white;
+    text-align:center;
+    margin:5px;
+}
+
+.photo_member{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 5px;
+    border:2px solid #287e7f;
+}
+.playUser{
+    height: 32px;
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+
+/*//////////////////*/
+/* CARD ALL MEMBER  */
+/*//////////////////*/
+
+.memberAll{
+    width: 194px;
+   /* height: 194px;*/
+}
+
+/*//////////////////*/
+/* CARD ONE MEMBER  */
+/*//////////////////*/
+
+.memberone{
+    margin-left:auto;
+    margin-right:auto;
+   /* height:396px;*/
+    width: 250px;
+    text-align:center;
+}
+
+.infosMember {
+    height: auto;
+    width: 68%;
+    float: right;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.mail{
+    text-align:center;
+    font-size:13px;
+}
+
+.nomMember{
+margin:0;
+}
+
+.line{
+    border-bottom:1px solid #8e3f72;
+    width: 75%;
+    margin-top:13px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.descriptionMember{
+    margin-top:18px;
+    font-size:14px;
+    font-style:italic;
+}
+
+.night{
+    text-align:left;
+    margin-left:5px;
+    margin-top:32px;
+    margin-bottom:0px;
+}
+
+.MN{
+    font-family:Megrim, sans-serif;
+}
+
+.btns{
+    display:flex;
+    justify-content:space-evenly;
+}
