@@ -1,0 +1,276 @@
+body{
+  background-color: #252525;
+  color: white;
+}
+
+h1{
+  color: white;
+  font-family: 'Megrim', cursive;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+h1::before{
+  	display: inline-block;
+    height: 10px;
+    content: " ";
+    text-shadow: none;
+    background-color: #313a3f;
+    width: 25%;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    border-radius: 5px;
+}
+
+h1::after{
+  display: inline-block;
+  height: 10px;
+  content: " ";
+  text-shadow: none;
+  background-color: #313a3f;
+  width: 25%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#detailsEvent{
+  display: flex;
+  border : 3px solid #153b3c;
+  border-radius: 10px;
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+  font-family:'Open Sans', sans-serif;
+  line-height: 150%;
+  position: relative;
+  padding-top: 5px;
+  height: auto;
+}
+
+label{
+	display:block;
+	width: 50%;
+	float: left;
+	color:#42B4BC;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+  	font-style: italic;
+	margin-top: 8px; 
+ 	margin-bottom: 8px;
+  	margin-left: 8px;
+ }
+
+ .champs{
+  width :300px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #153b3c;
+  color: white;
+  margin-top: 2px; 
+  margin-bottom: 4px;
+  margin-left: 15px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 18px;
+  outline: none;
+}
+
+textarea{
+  resize:none;
+  border: 1px solid #42B4BC;
+  border-radius:20px;
+  margin-top: 8px;
+  margin-left: 8px;
+  background-color: #252525;
+  color:white;
+  font-family:'Open Sans', sans-serif;
+  font-size: 18px;
+  width :80%;
+
+}
+
+#button{
+  cursor:pointer; 
+  padding:5px 20px; 
+  background-color:#252525; 
+  color:#42B4BC; 
+  border: solid 1px #42B4BC; 
+  border-radius:4px; 
+  font-size: 22px;
+  margin: 20px 0px;
+  text-align: center;
+  outline: none;
+}
+
+#button:hover{
+    background-color: #42B4BC;
+    color: white;
+}
+
+#valider{
+  text-align: center;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+    opacity: 0.8;
+    color: white;
+}
+
+::-moz-placeholder {
+    opacity: 0.8;
+    color: white;
+}
+
+:-moz-placeholder {
+    opacity: 0.8;
+    color: white;
+}
+
+:-ms-input-placeholder {
+    opacity: 0.8;
+    color: white;
+}
+
+.preview {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 0px 2px #ce5ba6;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.file-upload-wrapper {
+    position: relative;
+    z-index: 5;
+    display: block;
+    width: 90px;
+    height: 30px;
+    margin: 25px auto;
+    border-radius: 0px;
+    border-bottom: 1px dashed #42B4BC;
+}
+
+.file-upload-native,
+.file-upload-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
+.file-upload-native:focus,
+.file-upload-text:focus {
+    outline: none;
+}
+
+.file-upload-text {
+    z-index: 10;
+    padding: 5px 15px 8px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.4;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 1px;
+    text-overflow: ellipsis;
+    border: 0;
+    background-color: transparent;
+}
+
+.file-upload-native {
+    z-index: 15;
+    opacity: 0;
+}
+
+#langue{
+  background: #252525;
+  color: white;
+  border: 1px solid #42B4BC;
+  border-radius:22px;
+  font-size: 18px;
+}
+
+.container{
+	display: flex;
+}
+
+.eventspe {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.eventspe input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+.eventspe:hover input ~ .checkmark {
+    background-color: #ce5ba6 ;
+}
+
+
+.eventspe input:checked ~ .checkmark {
+    background-color: #42B4BC;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.eventspe input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.eventspe .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
