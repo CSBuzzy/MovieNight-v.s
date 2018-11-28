@@ -1,3 +1,5 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
 body{
   background-color: #252525;
   color: white;
@@ -19,27 +21,27 @@ body{
 
 #titre::before{
   display: inline-block;
-    height: 10px;
-    content: " ";
-    text-shadow: none;
-    background-color: #313a3f;
-    width: 25%;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    margin-left: 0px;
-    border-radius: 5px;
+  height: 10px;
+  content: " ";
+  text-shadow: none;
+  background-color: #313a3f;
+  width: 25%;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  border-radius: 5px;
 }
 
 #titre::after{
   display: inline-block;
-    height: 10px;
-    content: " ";
-    text-shadow: none;
-    background-color: #313a3f;
-    width: 25%;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+  height: 10px;
+  content: " ";
+  text-shadow: none;
+  background-color: #313a3f;
+  width: 25%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
 }
 
 .event{
@@ -118,9 +120,10 @@ body{
 }
 
 
-@media screen and (min-width: 800px){
-  #contenu{
+@media screen and (min-width: 800px) {
+  #contenu {
     margin-top: 80px;
     width: 800px;
     height: 100%;
   }
+}

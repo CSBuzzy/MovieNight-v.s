@@ -93,6 +93,7 @@ img.iconmenu {
     background:#287e7f;
     overflow: hidden;
     transition: width .5s;
+    z-index: 4;
 }
 
 .side-menu:hover {

@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../Public/CSS/admin_menu.css">
 </head>
 <body>
-<?php include "search_header_admin.php";?>
+
 <ul class="side-menu" >
 
     <li><img class="iconmenu" src="..\Public\Img\users.svg"/><a href="#">Membres</a></li>
