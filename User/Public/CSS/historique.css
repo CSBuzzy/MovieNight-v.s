@@ -1,0 +1,106 @@
+body{
+  background-color: #252525;
+  color: white;
+}
+
+#titre{
+  color: white;
+  font-family: 'Megrim', cursive;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+#titre::before{
+  display: inline-block;
+  height: 10px;
+  content: " ";
+  text-shadow: none;
+  background-color: #313a3f;
+  width: 25%;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  border-radius: 5px;
+}
+
+#titre::after{
+  display: inline-block;
+  height: 10px;
+  content: " ";
+  text-shadow: none;
+  background-color: #313a3f;
+  width: 25%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#titreEvent{
+  font-family: 'Megrim', cursive;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+#titreEvent::before{
+  display: inline-block;
+  height: 5px;
+  content: " ";
+  text-shadow: none;
+  background-color: #42b4bc;
+  width: 10%;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  border-radius: 5px;
+}
+
+#titreEvent::after{
+  display: inline-block;
+  height: 5px;
+  content: " ";
+  text-shadow: none;
+  background-color: #42b4bc;
+  width: 10%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#detailsEvent{
+  border : 3px solid #153b3c;
+  border-radius: 10px;
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  font-family:'Open Sans', sans-serif;
+  line-height: 150%;
+  position: relative;
+  padding-top: 5px;
+}
+
+.sousTitres{
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#organisateur::before{
+  content: "";
+  display : block;
+  clear: both;
+}
+
+#date{
+  text-transform: capitalize;
+}
+
+
+
+#statut{
+  background: #252525;
+  color: white;
+  border: 1px solid #42B4BC;
+  border-radius:20px;
+}

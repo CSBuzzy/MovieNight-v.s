@@ -16,7 +16,7 @@ class Member{
 	private $name_city_member;
 	private $post_code_city_member;
 	private $name_preference_member;
-	private $icon_preference_member;
+	private $value_prefer_member;
 	
 
 	public function __construct($id_member, 
@@ -33,7 +33,7 @@ class Member{
 								$password_member,
 								$description_member,
 								$name_preference_member,
-								$icon_preference_member						
+								$value_prefer_member					
 								) {
 		
 
@@ -52,8 +52,9 @@ class Member{
 		$this->name_city_member = $name_city_member;
 		$this->post_code_city_member = $post_code_city_member;
 		$this->name_preference_member = $name_preference_member;
-		$this->icon_preference_member = $icon_preference_member;
+		$this->value_prefer_member = $value_prefer_member;
 	}
+
 
 	public function getId_member(){
 		return $this->id_member;
@@ -111,8 +112,8 @@ class Member{
 		return $this->name_preference_member;
 	}
 
-	public function getIcon_preference_member(){
-		return $this->icon_preference_member;
+	public function getValue_prefer_member(){
+		return $this->value_prefer_member;
 	}
 }
 
