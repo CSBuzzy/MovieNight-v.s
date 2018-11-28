@@ -3,3 +3,4 @@
 .DS_Store
 *.php~
 Public/CSS/prof.css
+User/Model/DbConn.php
