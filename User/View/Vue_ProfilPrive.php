@@ -123,8 +123,8 @@
                                     </div>
 
                                     <div class="historique">
-                                    <input type="button" value="Historique" id="bouton_historique" > 
-                                    </div>
+                                    <a href="Historique.php"><input type="button" value="Historique" id="bouton_historique" > 
+                                    </div></a>
                               
                                     <div>
                                         <label for="materiels">Materiels : </label>
