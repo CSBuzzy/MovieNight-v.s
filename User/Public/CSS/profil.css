@@ -78,6 +78,7 @@ label{
 textarea{
   resize:none;
   border: 1px solid #42B4BC;
+  border-radius:20px;
   padding: 0.5em;
   margin-top: 8px;
   margin-left: 8px;
@@ -112,15 +113,6 @@ textarea{
 }
 
 
-td {
-	text-align: center;
-}
-
-th{
-	text-align: right;
-	font-weight: normal;
-}
-
 .icone{
 	margin: 0px 20px;
 	padding: 5px;
@@ -154,12 +146,7 @@ th{
 	color :#ce5ba6;
 }
 
-.valider{
-  margin: 20px 0px;
-  text-align: center;
-  outline: none;
-}
-#bouton_valider{
+#button{
   cursor:pointer; 
   padding:5px 20px; 
   background-color:#252525; 
@@ -167,6 +154,18 @@ th{
   border: solid 1px #42B4BC; 
   border-radius:4px; 
   font-size: 22px;
+  margin: 20px 0px;
+  text-align: center;
+  outline: none;
+}
+
+#button:hover{
+    background-color: #42B4BC;
+    color: white;
+}
+
+#valider{
+  text-align: center;
 }
 
 
@@ -308,11 +307,3 @@ input[type="file"]::-webkit-file-upload-button {
 
 }
 
-td {
-  text-align: center;
-}
-
-th{
-  text-align: right;
-  font-weight: normal;
-}

@@ -77,6 +77,7 @@ label{
 }
 
 #commentaires, #soiree{
+  resize:none;
   border: 1px solid #42B4BC;
   border-radius:20px;
 }

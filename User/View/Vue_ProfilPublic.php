@@ -39,7 +39,7 @@
 				</div>
 			   	<div>
 				    <label for="age">Age : </label>
-				    <input  type="text" name= "age" class="champs" value= "<?php print((int)((time()-strtotime($member->getBirth_date_member()))/3600/24/365.242)) ?>" disabled>
+				    <input  type="text" name= "age" class="champs" value= "<?php print((int)((time()-strtotime($member->getBirth_date_member()))/3600/24/365.242)) ?> ans"  disabled>
 				</div>
 
 				<div>
@@ -58,50 +58,55 @@
 
 				</div>
 				
-
-			
-				<div class="historique">
-					<input type="button" value="Historique" id="bouton_historique"> 
-				</div>
-
-				<div>
-                        <label for="materiels">Materiels : </label>
-                        <input  type="text" value="" name= "materiels" class="champs"disabled>
-                </div>
 			
 		</div>
 		<div class="formulaire" id="form2">
 			<a id="precedent"> <i class="fas fa-chevron-left"></i> </a>
-			<section>
-				<label>Préférences </label><br/>
-			 	
-			 	<table>
-					<tr>
-						<th><label>Bavard : </label></th>
-						<td><i class="fas fa-comments icone"></i></td>
-						<td><i class="fas fa-comments icone"></i></td>
-						<td><i class="fas fa-comments icone selected"></i></td>
-	     			</tr>
-	     			<tr>
-						<th><label>Fumeur : </label></th>
-						<td><i class="fas fa-smoking icone"></i></td>
-						<td><i class="fas fa-smoking icone selected"></i></td>
-						<td><i class="fas fa-smoking icone"></i></td>
-	     			</tr>
-	     			<tr>
-						<th><label>Animaux : </label></th>
-						<td><i class="fas fa-paw icone selected"></i></td>
-						<td><i class="fas fa-paw icone"></i></td>
-						<td><i class="fas fa-paw icone"></i></td>
-	     			</tr>
-	     			<tr>
-						<th><label>Mineurs : </label></th>
-						<td><i class="fas fa-child icone selected"></i></td>
-						<td><i class="fas fa-child icone"></i></td>
-						<td><i class="fas fa-child icone"></i></td>
-	     			</tr>
-				</table>
-			</section>
+			 	<div>
+            		<label for="bavard">Bavard : </label>
+                    <select name="bavard" class="champs" id="champs1" disabled>
+                        <option value="null">N'importe</option>
+                        <option value="1" >Oui</option>
+                        <option value="0" >Non</option>
+                    </select>
+                </div>
+
+                <div>
+                	<label for="fumeur">Fumeur : </label>
+                    <select name="fumeur" class="champs" id="champs2"disabled>
+                        <option value="null">N'importe</option>
+                        <option value="1">Oui</option>
+                        <option value="0"> Non</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="animaux">Animaux : </label>
+                    <select name="animaux" class="champs" id="champs3"disabled>
+                        <option value="null">N'importe</option>
+                        <option value="1">Oui</option>
+                        <option value="0">Non</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mineurs">Mineurs : </label>
+                    <select name="mineurs" class="champs" id="champs4"disabled>
+                        <option value="null">N'importe</option>
+                        <option value="1">Oui</option>
+                        <option value="0">Non</option>
+                    </select>
+                 </div>
+
+                 <div class="historique">
+					<input type="button" value="Historique" id="bouton_historique"> 
+				</div>
+
+                <div>
+                   	<label for="materiels">Materiels : </label>
+                    <input  type="text" value="" name= "materiels" class="champs"disabled>
+                </div>
+			
 		</div>
 	</div>
 	<?php

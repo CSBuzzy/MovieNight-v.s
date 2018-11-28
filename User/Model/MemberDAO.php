@@ -6,7 +6,7 @@ function connectionMember($email, $password){
 	require_once('Member.php');
 	
 
-	$SQLQuery = 'SELECT member.id_member,name_member, first_name_member, birth_date_member, description_member, password_member, photo_member, line1_address, line2_address, name_city, post_code_city, name_preference, icon_preference, value_contact_method as email_member, (select value_contact_method 
+	$SQLQuery = 'SELECT member.id_member,name_member, first_name_member, birth_date_member, description_member, password_member, photo_member, line1_address, line2_address, name_city, post_code_city, name_preference, value_preference, value_contact_method as email_member, (select value_contact_method 
 			from contact_method 
 			inner join have on contact_method.id_contact_method = have.id_contact_method
 			where id_contact_type = 2
@@ -43,7 +43,7 @@ function connectionMember($email, $password){
 										 $SQLRow->password_member,
 										 $SQLRow->description_member,
 										 $SQLRow->name_preference,
-										 $SQLRow->icon_preference 
+										 $SQLRow->value_preference
 										);
 		echo ("<h4 id = 'notification'>Bienvenue ".$_SESSION["member"]->getFirst_name_member()."</h4>");
 		$SQLStatement->closeCursor();
@@ -96,7 +96,69 @@ function infosProfilPublic($id){
 			return $member;
 		}
 	}
+}
 
+	function updateMember($id_member, $photo_member, $line1_address, $line2_address, $post_code_city, $name_city, $phone_member, $email_member, $password_member, $description_member, $name_preference, $value_preference){
+	require_once('DbConn.php');
+	require_once('Member.php');
+	
+
+	$SQLQuery = 'UPDATE member SET photo_member = :photo_member,password_member = :password_member,description_member = :description_member 
+				WHERE member.id_member = :id_member ; ';
+
+	$SQLQuery .= 'UPDATE member left outer join live on member.id_member=live.id_member 
+				left outer join address on live.id_address=address.id_address
+				left outer join city on address.id_city = city.id_city
+				SET  line1_address = :line1_address, line2_address = :line2_address, post_code_city = :post_code_city, name_city = :name_city WHERE member.id_member = :id_member ; ' ;
+	
+	$SQLQuery .= 'UPDATE contact_method inner join have on have.id_contact_method = contact_method.id_contact_method 
+				  set value_contact_method = :email_member
+				  where have.id_member = :id_member
+				  and id_contact_type = 1 ; ';
+
+	$SQLQuery .= 'UPDATE contact_method inner join have on have.id_contact_method = contact_method.id_contact_method 
+				set value_contact_method = :phone_member
+				where have.id_member = :id_member
+				and id_contact_type = 2'; 
+
+	$SQLStatement = $bdd->prepare($SQLQuery);
+	$SQLStatement->bindParam(':id_member', $id_member, PDO::PARAM_INT);
+	$SQLStatement->bindValue(':photo_member', $photo_member);
+	$SQLStatement->bindValue(':line1_address', $line1_address);
+	$SQLStatement->bindValue(':line2_address', $line2_address);
+	$SQLStatement->bindValue(':post_code_city', $post_code_city);
+	$SQLStatement->bindValue(':name_city', $name_city);
+	$SQLStatement->bindValue(':email_member', $email_member);
+	$SQLStatement->bindValue(':phone_member', $phone_member);
+	$SQLStatement->bindValue(':password_member', $password_member);
+	$SQLStatement->bindValue(':description_member', $description_member);
+	$SQLStatement->bindValue(':name_preference', $name_preference);
+	$SQLStatement->bindValue(':value_preference', $value_preference);
+	if($SQLStatement->execute()){
+		$_SESSION['member'] = new Member(
+			$id_member,
+			$photo_member,
+			$_SESSION['member']->getName_member(),
+			$_SESSION['member']->getFirst_name_member(),
+			$_SESSION['member']->getBirth_date_member(),
+			$line1_address,
+			$line2_address,
+			$post_code_city,
+			$name_city,
+			$phone_member,
+			$email_member,
+			$password_member,
+			$description_member,
+			$name_preference,
+			$value_preference);
+
+		echo ("<h4 id = 'notification'>Modifcation effectuée. </h4>");
+	}
+	$SQLStatement->closeCursor();
 
 }
 ?>
+
+
+
+          
