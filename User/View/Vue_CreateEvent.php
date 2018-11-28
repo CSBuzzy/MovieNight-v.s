@@ -7,26 +7,26 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="../Public/CSS/Créer_Event.css">
+	<link rel="stylesheet" href="../Public/CSS/createEvent.css">
 	
 	
 </head>	
 
 <body>
-	<h1> Créer Evenement </h1>
-		
+	<div id="contenu">
+		<h1> Créer Evenement </h1>
+			
 		<section id="detailsEvent">
 			<div id="logo">
-                <div class="profile">
-                    <div class="preview img-wrapper"></div>
-                                    <div class="file-upload-wrapper">
-                                        <input type="file" name="file" class="file-upload-native" accept="image/*" />
-                                        <input type="text" disabled placeholder="Photo" class="file-upload-text" />
-                                    </div>
-                            </div>
-                        </div>
-				<div class="container">
-           
+	            <div class="profile">
+	                <div class="preview img-wrapper"></div>
+	                <div class="file-upload-wrapper">
+	                    <input type="file" name="file" class="file-upload-native" accept="image/*" />
+	                    <input type="text" disabled placeholder="Photo" class="file-upload-text" />
+	                </div>
+	            </div>
+	        </div>
+			<div class="form">
 				<form id="form1">
 
 					<div>
@@ -37,12 +37,12 @@
 		            <div>
 		            	<label for="speEvent" >Evenement Special : </label>
 			            	<label class="eventspe">Oui
-  							<input type="radio" checked="checked" name="radio">
-  							<span class="checkmark"></span>
+								<input type="radio" checked="checked" name="radio">
+								<span class="checkmark"></span>
 						</label>
 						<label class="eventspe">Non
-  							<input type="radio" name="radio">
- 						    <span class="checkmark"></span>
+								<input type="radio" name="radio">
+							    <span class="checkmark"></span>
 						</label>
 					</div>
 
@@ -81,6 +81,8 @@
 		                <textarea name="description" > </textarea>
 		            </div>
 				</form>
+			</div>
+			<div class = "form">
 				<form id="form2">
 
 		            <div>
@@ -116,12 +118,14 @@
 		            </div>
 
 		        </form>
-
-		            <div id = "valider">
-		            	<input type="submit" name="submit" id="button" value="Valider">
-		            </div>
-				
+	            <div id = "valider">
+	            	<input type="submit" name="submit" id="button" value="Valider">
+	            </div>
 			</div>
 		</section>
+	</div>
+	<?php
+		include("menu.php");
+	?>
 </body>
 </html>

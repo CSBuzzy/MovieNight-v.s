@@ -14,11 +14,12 @@
 			require_once("../View/Vue_Evenement.php");
 		}
 		if (isset($_GET['action'])) {
-			if (isset($_POST)) {
+			if (!empty($_POST)) {
 				//methode d'insertion
 			}
 			else {
 				//affichage formulaire insertion
+				require_once("../View/Vue_createEvent.php");
 			}
 		}
 	}	

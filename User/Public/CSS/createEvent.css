@@ -35,10 +35,10 @@ h1::after{
 }
 
 #detailsEvent{
-  display: flex;
+  display: block;
   border : 3px solid #153b3c;
   border-radius: 10px;
-  width: 75%;
+  width: 400px;
   margin: auto;
   padding: 10px;
   font-family:'Open Sans', sans-serif;
@@ -109,6 +109,10 @@ textarea{
 
 #valider{
   text-align: center;
+}
+
+.container{
+  margin-bottom: 80px;
 }
 
 *,
@@ -208,10 +212,29 @@ input[type="file"]::-webkit-file-upload-button {
   font-size: 18px;
 }
 
-.container{
-	display: flex;
+.form{
+  display: flex;
 }
 
+#contenu{
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 800px) {
+  #detailsEvent{
+    width: 800px;
+  }
+  .form{
+    display: inline-block;
+    width: 350px;
+  }
+  #contenu{
+    margin-top: 80px;
+  }
+}
+
+
+/* boutons radio */
 .eventspe {
     display: flex;
     position: relative;
