@@ -159,3 +159,19 @@ body{
 .special{
   border-color: #42b4bc;
 }
+
+#lienProfil{
+  color: inherit;
+}
+
+#lienProfil:link {
+    text-decoration: none;
+}
+
+#lienProfil:visited {
+    text-decoration: none;
+}
+
+#lienProfil:hover {
+    text-decoration: underline;
+}

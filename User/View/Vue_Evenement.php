@@ -42,16 +42,13 @@
 			<label id="heure"><span class = "sousTitres">Heure : </span>
 				<?php print(strftime('%R',(strtotime($event->getDate_event())))) ?></label><br/>
 			<label id="description"><span class = "sousTitres">Description : </span><div id="texteDescription"><?php print($event->getDescription_event()) ?></div></label><br/>
-			<label id="organisateur"><span class = "sousTitres">Organisateur : </span><?php print($event->getOrganizer()) ?></label><br/>
+			<label id="organisateur"><span class = "sousTitres">Organisateur : </span><a id="lienProfil" href="/MovieNight-v.s/User/Controller/Profil.php?id=<?php print($event->getId_member())?>"><?php print($event->getOrganizer())?></a></label><br/>
 			<label id="preferences"><span class = "sousTitres">Préférences : </span>//TODO</label><br/>
 			<label id="materiel"><span class = "sousTitres">Matériel : </span>//TODO</label><br/>
 			<label id="places"><span class = "sousTitres">Places restantes : </span><?php print($event->getSeatsRemaining_event().'/'.$event->getMember_number_event()) ?></label><br/>
 			<a href="../Controller/Evenements.php"><i class="fa fa-fast-backward circle"></i></a>
 			<a href="../Controller/Evenements.php"><img id="ticket" src="../Public/Img/ticket.svg"></a>
 		</section>
-		
-
-
 	</div>
 	<?php
 		include("menu.php");

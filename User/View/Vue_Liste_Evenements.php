@@ -23,9 +23,9 @@
 					$script .= '<img id="image" src="'.$event->getImage_event().'">';
 					$script .= '<div id="texteEvenement">';
 					$script .= '<h2 id="titreEvenement">'.$event->getName_event().'</h2>';
-					$script .= '<strong>Titre(s) :</strong> "//TODO"<br/>';
 					$script .= '<strong>Date :</strong> '. strftime('%A %d %B',(strtotime($event->getDate_event()))).' <br/>';
 					$script .= '<strong>Heure :</strong> '.strftime('%R',(strtotime($event->getDate_event()))).'<br/>';
+					$script .= '<strong>Durée : </strong>'. $event->getDuration_event() . '<br/>';
 					$script .= '<strong>Ville : </strong><span id = "ville">'.ucfirst(strtolower($event->getCity())).'</span><br/>';
 					$script .= '<strong>Places disponibles :</strong> '.$event->getSeatsRemaining_event().'/'.$event->getMember_number_event().'<br/>';
 					$script .= '<a class="lienEvenement" href="Evenements.php?event='.$event->getId_event().'"><i class="fa fa-play circle"></i></a>';
