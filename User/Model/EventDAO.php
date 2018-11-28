@@ -3,7 +3,7 @@
 	function getAllEvents(){
 		require('DbConn.php');
 		require_once('Event.php');
-		$SQLQuery = "SELECT * from v_event_list";
+		$SQLQuery = "SELECT * from v_event_list where id_status = 1";
 		$SQLResult = $bdd->query($SQLQuery);
 		$eventList = array();
 		while ($SQLRow = $SQLResult->FetchObject()) {

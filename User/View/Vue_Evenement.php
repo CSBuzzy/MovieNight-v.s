@@ -18,16 +18,24 @@
 			<img id="image" src=<?php print($event->getImage_event()) ?>>
 			<h2 id="titreEvenement"><?php print($event->getName_event()) ?></h2>
 			<label id="langue">
-				<span class = "languesContenu" data-language = <?php print($contentList[0]->getLanguage()) ?>></span>
-				<!--span class = "languesContenu" data-language = "VOSTA"></span-->
+				<?php foreach ($contentList as $content) {
+					print('<span class = "languesContenu" data-language = '. $content->getLanguage() . '></span>');
+				} ?>
 				<span class = "langue" data-language = "VO">VO </span>
 				<span class = "langue" data-language = "VF">VF </span>
 				<span class = "langue" data-language = "VOSTFR">VOSTFR </span>
 				<span class = "langue" data-language = "VOSTA">VOSTA</span>
 			</label>
-			<label id="contenu"><span class = "sousTitres">Titre(s) : </span><?php print($contentList[0]->getName_content()) ?></label><br/>
+			<label id="contenu"><span class = "sousTitres">Titre(s) : </span>
+				<?php 
+					foreach ($contentList as $content) { 
+						print($content->getName_content(). ', '); 
+					}
+					print('...')
+				?>
+			</label><br/>
 			<label id="genre"><span class = "sousTitres">Genre : </span><?php print($contentList[0]->getGenre()) ?></label><br/>
-			<label id="localisation"><span class = "sousTitres">Localisation : </span><?php print(ucfirst(strtolower($event->getCity()))) ?></label><br/>
+			<label id="localisation"><span class = "sousTitres">Localisation : </span><?php print(ucwords(strtolower($event->getCity()))) ?></label><br/>
 			<label id="date"><span class = "sousTitres">Date : </span>
 				<?php setlocale(LC_TIME, 'fra_fra'); print(strftime('%A %d %B %G',(strtotime($event->getDate_event())))) ?>
 			</label><br/>

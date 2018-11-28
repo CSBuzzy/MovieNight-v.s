@@ -38,15 +38,19 @@ body{
     border-radius: 5px;
 }
 
+#conteneur{
+  text-align: center;
+}
+
 .event{
   width: 350px;
   height: 150px;
-  margin-top: 20px;
+  margin : 10px 20px;
   border-radius: 10px;
   background-color: #153b3c;
-  margin-left: auto;
-  margin-right: auto;
   border: 1px solid #42b4bc;
+  text-align: left;
+  display: inline-block;
 }
 
 .special{
