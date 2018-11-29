@@ -71,4 +71,44 @@
 		}
 	}
 
+	function addEvent($nom, $radio, $type, $titre, $langue, $genre, $date, $heure, $duree, $description, $number, $line1, $line2, $code, $ville, $organizer, $image){
+		require('DbConn.php');
+		$SQLQuery = 'CALL addEvent(:nom, :radio, :titre, :langue, :genre, :date, :duree, :description, :number, :line1, :line2, :code, :ville, :organizer, :image, :type)';
+		$SQLStatement = $bdd->prepare($SQLQuery);
+		$SQLStatement->bindValue(':nom', $nom);
+		$SQLStatement->bindValue(':radio', $radio);
+		$SQLStatement->bindValue(':type', $type);
+		$SQLStatement->bindValue(':titre', $titre);
+		$SQLStatement->bindValue(':langue', $langue);
+		$SQLStatement->bindValue(':genre', $genre);
+		$SQLStatement->bindValue(':date', $date.' '.$heure);
+		$SQLStatement->bindValue(':duree', $duree);
+		$SQLStatement->bindValue(':description', $description);
+		$SQLStatement->bindValue(':number', $number);
+		$SQLStatement->bindValue(':line1', $line1);
+		$SQLStatement->bindValue(':line2', $line2);
+		$SQLStatement->bindValue(':code', $code);
+		$SQLStatement->bindValue(':ville', $ville);
+		$SQLStatement->bindValue(':organizer', $organizer);
+		$SQLStatement->bindValue(':image', $image);
+		if($SQLStatement->execute()){
+			$SQLStatement->debugDumpParams();
+			return true;
+		}
+		else{
+			$SQLStatement->debugDumpParams();
+			return false;
+		}
+	}
+
+	function listGenres(){
+		require('DbConn.php');
+		$SQLResult = $bdd->query('SELECT name_genre from genre');
+		$listGenres = array();
+		while ($SQLRow = $SQLResult->FetchObject()) {
+			array_push($listGenres, $SQLRow->name_genre);
+		}
+		return $listGenres;
+	}
+
 ?>

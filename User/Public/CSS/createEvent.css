@@ -120,7 +120,6 @@ textarea{
 *::before {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 ::-webkit-input-placeholder {
@@ -204,7 +203,7 @@ input[type="file"]::-webkit-file-upload-button {
     opacity: 0;
 }
 
-#langue{
+.select{
   background: #252525;
   color: white;
   border: 1px solid #42B4BC;

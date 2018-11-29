@@ -23,7 +23,7 @@
 					$script .= '<img id="image" src="'.$event->getImage_event().'">';
 					$script .= '<div id="texteEvenement">';
 					$script .= '<h2 id="titreEvenement">'.$event->getName_event().'</h2>';
-					$script .= '<strong>Date :</strong> '. strftime('%A %d %B',(strtotime($event->getDate_event()))).' <br/>';
+					$script .= '<strong>Date :</strong> '. utf8_encode(strftime('%A %d %B',(strtotime($event->getDate_event())))).' <br/>';
 					$script .= '<strong>Heure :</strong> '.strftime('%R',(strtotime($event->getDate_event()))).'<br/>';
 					$script .= '<strong>Durée : </strong>'. $event->getDuration_event() . '<br/>';
 					$script .= '<strong>Ville : </strong><span id = "ville">'.ucfirst(strtolower($event->getCity())).'</span><br/>';

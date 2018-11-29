@@ -37,7 +37,7 @@
 			<label id="genre"><span class = "sousTitres">Genre : </span><?php print($contentList[0]->getGenre()) ?></label><br/>
 			<label id="localisation"><span class = "sousTitres">Localisation : </span><?php print(ucwords(strtolower($event->getCity()))) ?></label><br/>
 			<label id="date"><span class = "sousTitres">Date : </span>
-				<?php setlocale(LC_TIME, 'fra_fra'); print(strftime('%A %d %B %G',(strtotime($event->getDate_event())))) ?>
+				<?php setlocale(LC_TIME, 'fra_fra'); print(utf8_encode(strftime('%A %d %B %G',(strtotime($event->getDate_event()))))) ?>
 			</label><br/>
 			<label id="heure"><span class = "sousTitres">Heure : </span>
 				<?php print(strftime('%R',(strtotime($event->getDate_event())))) ?></label><br/>
