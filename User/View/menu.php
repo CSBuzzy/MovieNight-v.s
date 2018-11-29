@@ -19,13 +19,13 @@
 			<div id="menuDeroulant">
 			 	<a href="/MovieNight-v.s/User/Controller/Evenements.php?action=create">Créer évènement</a>
 			 	<a href="">Proposer évènement</a>
-			 	<a href="../View/Contact.php">Contact</a>
-			 	<a href="../View/Signaler.php">Signaler</a>
+			 	<a href="/MovieNight-v.s/User/View/Contact.php">Contact</a>
+			 	<a href="/MovieNight-v.s/User/View/Signaler.php">Signaler</a>
 			 	<a href="">Geolocalisation</a>
-			 	<a href="../View/charte.html">Charte</a>
+			 	<a href="/MovieNight-v.s/User/View/charte.html">Charte</a>
 			 	<a href="">À propos</a>
 			 	<a href="">FAQ</a>
-			 	<a href="../View/Accueil.html">Deconnexion</a>
+			 	<a href="/MovieNight-v.s/User/View/Accueil.html">Deconnexion</a>
 			</div>
 		</div>
 	</div>
