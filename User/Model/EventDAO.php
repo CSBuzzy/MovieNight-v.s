@@ -91,14 +91,7 @@
 		$SQLStatement->bindValue(':ville', $ville);
 		$SQLStatement->bindValue(':organizer', $organizer);
 		$SQLStatement->bindValue(':image', $image);
-		if($SQLStatement->execute()){
-			$SQLStatement->debugDumpParams();
-			return true;
-		}
-		else{
-			$SQLStatement->debugDumpParams();
-			return false;
-		}
+		return $SQLStatement->execute();
 	}
 
 	function listGenres(){

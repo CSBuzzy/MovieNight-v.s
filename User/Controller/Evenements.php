@@ -18,8 +18,9 @@
 			if (!empty($_POST)) {
 				session_start();
 				if(addEvent($_POST['nom'], $_POST['radio'], $_POST['type'], $_POST['titre'], $_POST['langue'], $_POST['genre'], $_POST['date'], $_POST['heure'], $_POST['duree'], $_POST['description'], $_POST['number'], $_POST['line1_address'], $_POST['line2_address'], $_POST['code'], $_POST['ville'], $_SESSION['member']->getId_member(), $_POST['image'])){
-					print("Votre demande de création a été prise en compte, elle sera visible une fois validée par un administrateur");
-					require_once("Evenements.php");
+					print("<span id = 'notif'>Votre demande de création a été prise en compte, elle sera visible une fois validée par un administrateur</span>");
+					$eventList = getAllEvents();
+					require_once("../View/Vue_Liste_Evenements.php");
 
 				}
 				else  {

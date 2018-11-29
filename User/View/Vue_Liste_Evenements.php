@@ -26,7 +26,7 @@
 					$script .= '<strong>Date :</strong> '. utf8_encode(strftime('%A %d %B',(strtotime($event->getDate_event())))).' <br/>';
 					$script .= '<strong>Heure :</strong> '.strftime('%R',(strtotime($event->getDate_event()))).'<br/>';
 					$script .= '<strong>Durée : </strong>'. $event->getDuration_event() . '<br/>';
-					$script .= '<strong>Ville : </strong><span id = "ville">'.ucfirst(strtolower($event->getCity())).'</span><br/>';
+					$script .= '<strong>Ville : </strong><span id = "ville">'.ucwords(strtolower($event->getCity())).'</span><br/>';
 					$script .= '<strong>Places disponibles :</strong> '.$event->getSeatsRemaining_event().'/'.$event->getMember_number_event().'<br/>';
 					$script .= '<a class="lienEvenement" href="Evenements.php?event='.$event->getId_event().'"><i class="fa fa-play circle"></i></a>';
 					$script .= '</div></section>';

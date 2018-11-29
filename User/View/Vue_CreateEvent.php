@@ -96,14 +96,13 @@
 		                <label for="heure">Heure : </label>
 		                <input  type="time" name= "heure"class="champs">
 		            </div>
-
-		            <div>
-		                <label for="duree">Durée : </label>
-		                <input  type="text" name= "duree" class="champs">
-		            </div>
 		        </div>
 		        
 				<div class = "form">
+					<div>
+		                <label for="duree">Durée : </label>
+		                <input  type="text" name= "duree" class="champs">
+		            </div>
 
 		            <div>
 		                <label for="description">Description : </label>

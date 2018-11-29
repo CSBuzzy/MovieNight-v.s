@@ -33,6 +33,7 @@ body{
   height: 70px;
   text-align: center;
   border-radius: 50px;
+  z-index: 99;
 }
 
 #menu .icons {
