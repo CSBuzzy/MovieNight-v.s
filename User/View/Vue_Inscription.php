@@ -76,7 +76,6 @@
             <div class="input-field col s11">
                 <input name="email" id="email" type="email" class="white-text validate">
                 <label for="email" class="teal-text">Mail</label>
-                <span class="helper-text" data-error="wrong" data-success="right"></span>
             </div>
             <div class="col s1">
                 <i class="material-icons">grade</i>
@@ -84,7 +83,6 @@
             <div class="input-field col s11">
                 <input name="password" id="password" type="password" class="white-text validate">
                 <label for="password" class="teal-text">Mot de passe</label>
-                <span class="helper-text" data-error="wrong" data-success="right"></span>
             </div>
             <div class="col s1 ">
                 <i class="material-icons">grade</i>
@@ -92,7 +90,6 @@
             <div class="input-field col s11">
                 <input name="passwordconfirm" id="passwordconfirm" type="password" class="white-text validate">
                 <label for="passwordconfirm" class="teal-text">Confirmation du mot de passe</label>
-                <span class="helper-text" data-error="wrong" data-success="right"></span>
             </div>
         </div>
         <div class="row valign-wrapper">
@@ -101,7 +98,7 @@
             </div>
             <div class="file-field input-field col s6 m6 offset-s1">
                <!-- <input type="hidden" name="MAX_FILE_SIZE" value="100000"> -->
-                <input type="file" name="photo">
+                <input type="file" name="photo" value="">
                 <img src="../Public/Img/thin-add-button.svg" class="imgAvatar circle responsive-img">
             </div>
         </div>

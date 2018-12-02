@@ -47,13 +47,14 @@ body {
     font-size:11px;
     color:#8e3f72;
     /*padding-top:50px;*/
-    padding-left:37px;
+    padding-left:23px;
     float:left;
 }
 
 img, .heighBtnPlay{
     height:66px;
     width:66px;
+    border-color:#42b4bc;
 }
 
 .avatar{
@@ -73,6 +74,17 @@ img, .heighBtnPlay{
     text-decoration: underline;
 }
 
+#notif{
+    color:white;
+}
+/***************************/
+/*    LABEL MATERIALIZE   */
+/***************************/
+
+label.teal-text {
+    color: #42b4bc !important;
+}
+
 /***************************/
 /*    INPUTS MATERIALIZE   */
 /***************************/
@@ -80,26 +92,26 @@ img, .heighBtnPlay{
 /*label focus color */
 
 .input-field input[type=text]:focus + label {
-    color: #287e7f !important;
+    color: #42b4bc !important;
 }
 .input-field input[type=email]:focus + label {
-    color: #287e7f !important;
+    color: #42b4bc !important;
 }
 .input-field input[type=password]:focus + label {
-    color: #287e7f !important;
+    color: #42b4bc !important;
 }
 
 /* label underline focus color */
 
 .input-field input[type=text]:focus {
-    border-bottom: 1px solid #287e7f !important;
-    box-shadow: 0 1px 0 0 #287e7f !important;
+    border-bottom: 1px solid #42b4bc !important;
+    box-shadow: 0 1px 0 0 #42b4bc !important;
 }
 .input-field input[type=email]:focus {
-    border-bottom: 1px solid #287e7f !important;
-    box-shadow: 0 1px 0 0 #287e7f !important;
+    border-bottom: 1px solid #42b4bc !important;
+    box-shadow: 0 1px 0 0 #42b4bc !important;
 }
 .input-field input[type=password]:focus {
-    border-bottom: 1px solid #287e7f !important;
-    box-shadow: 0 1px 0 0 #287e7f !important;
+    border-bottom: 1px solid #42b4bc !important;
+    box-shadow: 0 1px 0 0 #42b4bc !important;
 }
