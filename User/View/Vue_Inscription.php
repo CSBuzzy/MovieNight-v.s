@@ -97,8 +97,11 @@
                 <label class="teal-text avatar">Photo de profil</label>
             </div>
             <div class="file-field input-field col s6 m6 offset-s1">
-               <!-- <input type="hidden" name="MAX_FILE_SIZE" value="100000"> -->
+
                 <input type="file" name="photo" value="">
+
+                <input type="text" name="photo" value="">
+
                 <img src="../Public/Img/thin-add-button.svg" class="imgAvatar circle responsive-img">
             </div>
         </div>

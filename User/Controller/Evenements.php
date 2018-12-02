@@ -19,6 +19,4 @@
 		//puis on affiche la vue de la liste d'evenements
 		require_once("../View/Vue_Liste_Evenements.php");
 	}
-
-
  ?>

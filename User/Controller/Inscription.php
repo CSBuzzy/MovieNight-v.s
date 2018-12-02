@@ -1,5 +1,5 @@
 <?php
-require_once('../Model/MemberDAO.php');
+    require_once('../Model/MemberDAO.php');
 
     if(!empty($_POST)) {
         $message = inscriptionMember($_POST['last_name'], $_POST['first_name'],

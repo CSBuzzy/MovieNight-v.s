@@ -35,6 +35,7 @@ function connectionMember($email, $password){
 
 function inscriptionMember($last_name, $first_name, $birthdate, $password, $photo, $passwordconfirm,
                            $description,$address,$address2,$post_code,$city,$email, $phone_number){
+
     require_once('../Model/DbConn.php');
 
     if($password==$passwordconfirm){
@@ -43,9 +44,9 @@ function inscriptionMember($last_name, $first_name, $birthdate, $password, $phot
         print('Vérifiez le mot de passe!');
         return false;
     }
-
     $SQLStatement = $bdd->prepare("CALL add_member(:name,:first_name,:birth_date,:pass,:photo,:description,
-                                   :address,:address2,:post_code,:city,:mail,:phone_number,@message)");
+                                   :address,:address2,:post_code,:city,:mail,:phone_number, @message)");
+
     $SQLStatement->bindValue(':name', $last_name);
     $SQLStatement->bindValue(':first_name', $first_name);
     $SQLStatement->bindValue(':birth_date', $birthdate);
@@ -58,16 +59,19 @@ function inscriptionMember($last_name, $first_name, $birthdate, $password, $phot
     $SQLStatement->bindvalue(':city', $city);
     $SQLStatement->bindValue(':mail', $email);
     $SQLStatement->bindvalue(':phone_number', $phone_number);
-    if($SQLStatement->execute()){
-        $SQLStatement = $bdd->prepare("SELECT @message as message");
-        $SQLStatement->execute();
-        if($SQLRow = $SQLStatement->fetchObject()){
-            return $SQLStatement->message;
-        }
-    }else{
-        $SQLStatement->debugDumpParams();
-        return false;
+
+    if ($SQLStatement->execute()) {
+    	$SQLStatement = $bdd->prepare("SELECT @message as message");
+    	$SQLStatement->execute();
+		if ($SQLRow = $SQLStatement->FetchObject()) {
+			return $SQLRow->message;
+		}
     }
+    else {
+    	$SQLStatement->debugDumpParams();
+    	return false;
+    }
+
 }
 
 ?>
