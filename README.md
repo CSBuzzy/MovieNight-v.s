@@ -11,4 +11,4 @@ Application développée dans le cadre de l'U'DEV, basée sur un projet personne
 * [Jonathan Bonnat](https://github.com/Jon00312)    
 * [Emeline Benquet](https://github.com/HDEmy)    
 * [Melissa Bouillet](https://github.com/melissabouillet)    
-* [Stéphanie Rebuzzi](https://github.com/CSBuzzy)    
+* [Stéphanie R.](https://github.com/CSBuzzy)    
